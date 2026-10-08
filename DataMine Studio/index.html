@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataMine Studio - Universal Data Mining Platform</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Design System -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- External Libraries (CDN) -->
+  <!-- Papa Parse for CSV -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <!-- SheetJS for Excel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <!-- Chart.js for Visualizations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <!-- html2pdf for Reports -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar"></aside>
+
+  <!-- Main Application Wrapper -->
+  <div id="app-shell">
+    <!-- Header -->
+    <header class="header" id="header"></header>
+
+    <!-- Main Content Area (Pages will be injected here) -->
+    <main class="main-content" id="main-content">
+      <div class="state-container" style="min-height: 400px;">
+        <div class="state-title">Loading DataMine Studio...</div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Utilities -->
+  <script src="utils/helpers.js"></script>
+  <script src="utils/storage.js"></script>
+  <script src="utils/export.js"></script>
+
+  <!-- Core Modules -->
+  <script src="core/validation.js"></script>
+  <script src="core/dataset-loader.js"></script>
+  <script src="core/attribute-detector.js"></script>
+  <script src="core/statistics.js"></script>
+  <script src="core/preprocessing.js"></script>
+  <script src="core/metrics.js"></script>
+
+  <!-- Algorithms -->
+  <script src="algorithms/j48.js"></script>
+  <script src="algorithms/naive-bayes.js"></script>
+  <script src="algorithms/logistic-regression.js"></script>
+  <script src="algorithms/linear-regression.js"></script>
+  <script src="algorithms/multiple-linear-regression.js"></script>
+  <script src="algorithms/kmeans.js"></script>
+  <script src="algorithms/apriori.js"></script>
+  <script src="algorithms/fp-growth.js"></script>
+
+  <!-- Visualization & Reports -->
+  <script src="visualization/charts.js"></script>
+  <script src="reports/report-generator.js"></script>
+
+  <!-- Data -->
+  <script src="data/sample-datasets.js"></script>
+
+  <!-- Main App (Router & UI Renderers) -->
+  <script src="app.js"></script>
+
+</body>
+</html>
