@@ -1,0 +1,372 @@
+// data/sample-datasets.js — Built-in sample datasets
+
+const SampleDatasets = {
+
+  datasets: [
+    {
+      id: 'iris',
+      name: 'Iris Dataset',
+      description: 'Classic botanical dataset — 150 samples, 4 numeric features, 3 species classes.',
+      rows: 150, columns: 5, format: 'CSV',
+      suitable: ['Classification', 'Clustering'],
+      csv: `sepal_length,sepal_width,petal_length,petal_width,species
+5.1,3.5,1.4,0.2,setosa
+4.9,3.0,1.4,0.2,setosa
+4.7,3.2,1.3,0.2,setosa
+4.6,3.1,1.5,0.2,setosa
+5.0,3.6,1.4,0.2,setosa
+5.4,3.9,1.7,0.4,setosa
+4.6,3.4,1.4,0.3,setosa
+5.0,3.4,1.5,0.2,setosa
+4.4,2.9,1.4,0.2,setosa
+4.9,3.1,1.5,0.1,setosa
+5.4,3.7,1.5,0.2,setosa
+4.8,3.4,1.6,0.2,setosa
+4.8,3.0,1.4,0.1,setosa
+4.3,3.0,1.1,0.1,setosa
+5.8,4.0,1.2,0.2,setosa
+5.7,4.4,1.5,0.4,setosa
+5.4,3.9,1.3,0.4,setosa
+5.1,3.5,1.4,0.3,setosa
+5.7,3.8,1.7,0.3,setosa
+5.1,3.8,1.5,0.3,setosa
+5.4,3.4,1.7,0.2,setosa
+5.1,3.7,1.5,0.4,setosa
+4.6,3.6,1.0,0.2,setosa
+5.1,3.3,1.7,0.5,setosa
+4.8,3.4,1.9,0.2,setosa
+5.0,3.0,1.6,0.2,setosa
+5.0,3.4,1.6,0.4,setosa
+5.2,3.5,1.5,0.2,setosa
+5.2,3.4,1.4,0.2,setosa
+4.7,3.2,1.6,0.2,setosa
+4.8,3.1,1.6,0.2,setosa
+5.4,3.4,1.5,0.4,setosa
+5.2,4.1,1.5,0.1,setosa
+5.5,4.2,1.4,0.2,setosa
+4.9,3.1,1.5,0.2,setosa
+5.0,3.2,1.2,0.2,setosa
+5.5,3.5,1.3,0.2,setosa
+4.9,3.6,1.4,0.1,setosa
+4.4,3.0,1.3,0.2,setosa
+5.1,3.4,1.5,0.2,setosa
+5.0,3.5,1.3,0.3,setosa
+4.5,2.3,1.3,0.3,setosa
+4.4,3.2,1.3,0.2,setosa
+5.0,3.5,1.6,0.6,setosa
+5.1,3.8,1.9,0.4,setosa
+4.8,3.0,1.4,0.3,setosa
+5.1,3.8,1.6,0.2,setosa
+4.6,3.2,1.4,0.2,setosa
+5.3,3.7,1.5,0.2,setosa
+5.0,3.3,1.4,0.2,setosa
+7.0,3.2,4.7,1.4,versicolor
+6.4,3.2,4.5,1.5,versicolor
+6.9,3.1,4.9,1.5,versicolor
+5.5,2.3,4.0,1.3,versicolor
+6.5,2.8,4.6,1.5,versicolor
+5.7,2.8,4.5,1.3,versicolor
+6.3,3.3,4.7,1.6,versicolor
+4.9,2.4,3.3,1.0,versicolor
+6.6,2.9,4.6,1.3,versicolor
+5.2,2.7,3.9,1.4,versicolor
+5.0,2.0,3.5,1.0,versicolor
+5.9,3.0,4.2,1.5,versicolor
+6.0,2.2,4.0,1.0,versicolor
+6.1,2.9,4.7,1.4,versicolor
+5.6,2.9,3.6,1.3,versicolor
+6.7,3.1,4.4,1.4,versicolor
+5.6,3.0,4.5,1.5,versicolor
+5.8,2.7,4.1,1.0,versicolor
+6.2,2.2,4.5,1.5,versicolor
+5.6,2.5,3.9,1.1,versicolor
+5.9,3.2,4.8,1.8,versicolor
+6.1,2.8,4.0,1.3,versicolor
+6.3,2.5,4.9,1.5,versicolor
+6.1,2.8,4.7,1.2,versicolor
+6.4,2.9,4.3,1.3,versicolor
+6.6,3.0,4.4,1.4,versicolor
+6.8,2.8,4.8,1.4,versicolor
+6.7,3.0,5.0,1.7,versicolor
+6.0,2.9,4.5,1.5,versicolor
+5.7,2.6,3.5,1.0,versicolor
+5.5,2.4,3.8,1.1,versicolor
+5.5,2.4,3.7,1.0,versicolor
+5.8,2.7,3.9,1.2,versicolor
+6.0,2.7,5.1,1.6,versicolor
+5.4,3.0,4.5,1.5,versicolor
+6.0,3.4,4.5,1.6,versicolor
+6.7,3.1,4.7,1.5,versicolor
+6.3,2.3,4.4,1.3,versicolor
+5.6,3.0,4.1,1.3,versicolor
+5.5,2.5,4.0,1.3,versicolor
+5.5,2.6,4.4,1.2,versicolor
+6.1,3.0,4.6,1.4,versicolor
+5.8,2.6,4.0,1.2,versicolor
+5.0,2.3,3.3,1.0,versicolor
+5.6,2.7,4.2,1.3,versicolor
+5.7,3.0,4.2,1.2,versicolor
+5.7,2.9,4.2,1.3,versicolor
+6.2,2.9,4.3,1.3,versicolor
+5.1,2.5,3.0,1.1,versicolor
+5.7,2.8,4.1,1.3,versicolor
+6.3,3.3,6.0,2.5,virginica
+5.8,2.7,5.1,1.9,virginica
+7.1,3.0,5.9,2.1,virginica
+6.3,2.9,5.6,1.8,virginica
+6.5,3.0,5.8,2.2,virginica
+7.6,3.0,6.6,2.1,virginica
+4.9,2.5,4.5,1.7,virginica
+7.3,2.9,6.3,1.8,virginica
+6.7,2.5,5.8,1.8,virginica
+7.2,3.6,6.1,2.5,virginica
+6.5,3.2,5.1,2.0,virginica
+6.4,2.7,5.3,1.9,virginica
+6.8,3.0,5.5,2.1,virginica
+5.7,2.5,5.0,2.0,virginica
+5.8,2.8,5.1,2.4,virginica
+6.4,3.2,5.3,2.3,virginica
+6.5,3.0,5.5,1.8,virginica
+7.7,3.8,6.7,2.2,virginica
+7.7,2.6,6.9,2.3,virginica
+6.0,2.2,5.0,1.5,virginica
+6.9,3.2,5.7,2.3,virginica
+5.6,2.8,4.9,2.0,virginica
+7.7,2.8,6.7,2.0,virginica
+6.3,2.7,4.9,1.8,virginica
+6.7,3.3,5.7,2.1,virginica
+7.2,3.2,6.0,1.8,virginica
+6.2,2.8,4.8,1.8,virginica
+6.1,3.0,4.9,1.8,virginica
+6.4,2.8,5.6,2.1,virginica
+7.2,3.0,5.8,1.6,virginica
+7.4,2.8,6.1,1.9,virginica
+7.9,3.8,6.4,2.0,virginica
+6.4,2.8,5.6,2.2,virginica
+6.3,2.8,5.1,1.5,virginica
+6.1,2.6,5.6,1.4,virginica
+7.7,3.0,6.1,2.3,virginica
+6.3,3.4,5.6,2.4,virginica
+6.4,3.1,5.5,1.8,virginica
+6.0,3.0,4.8,1.8,virginica
+6.9,3.1,5.4,2.1,virginica
+6.7,3.1,5.6,2.4,virginica
+6.9,3.1,5.1,2.3,virginica
+5.8,2.7,5.1,1.9,virginica
+6.8,3.2,5.9,2.3,virginica
+6.7,3.3,5.7,2.5,virginica
+6.7,3.0,5.2,2.3,virginica
+6.3,2.5,5.0,1.9,virginica
+6.5,3.0,5.2,2.0,virginica
+6.2,3.4,5.4,2.3,virginica
+5.9,3.0,5.1,1.8,virginica`
+    },
+    {
+      id: 'market_basket',
+      name: 'Market Basket Dataset',
+      description: 'Transaction dataset for association rule mining — 100 shopping transactions.',
+      rows: 100, columns: 2, format: 'CSV',
+      suitable: ['Association Rules'],
+      csv: `Transaction_ID,Items
+T001,Bread|Milk|Eggs
+T002,Bread|Butter|Jam
+T003,Milk|Eggs|Cheese
+T004,Bread|Milk|Butter
+T005,Eggs|Cheese|Yogurt
+T006,Bread|Milk|Eggs|Cheese
+T007,Butter|Jam|Bread
+T008,Milk|Yogurt|Cheese
+T009,Bread|Eggs|Butter
+T010,Milk|Bread|Jam
+T011,Eggs|Milk|Bread|Butter
+T012,Cheese|Yogurt|Milk
+T013,Bread|Jam|Butter|Milk
+T014,Eggs|Bread|Cheese
+T015,Milk|Butter|Yogurt
+T016,Bread|Milk|Eggs|Butter|Jam
+T017,Cheese|Eggs|Yogurt
+T018,Bread|Butter|Milk
+T019,Jam|Bread|Eggs
+T020,Milk|Cheese|Butter
+T021,Bread|Milk|Yogurt
+T022,Eggs|Butter|Jam
+T023,Bread|Cheese|Milk
+T024,Milk|Eggs|Butter|Bread
+T025,Yogurt|Cheese|Jam
+T026,Bread|Milk|Eggs
+T027,Butter|Bread|Jam|Milk
+T028,Eggs|Cheese|Bread
+T029,Milk|Yogurt|Butter
+T030,Bread|Jam|Eggs|Milk
+T031,Cheese|Milk|Bread
+T032,Eggs|Butter|Milk|Yogurt
+T033,Bread|Milk|Jam
+T034,Cheese|Eggs|Bread|Butter
+T035,Milk|Yogurt|Bread
+T036,Jam|Butter|Eggs
+T037,Bread|Milk|Cheese|Eggs
+T038,Butter|Yogurt|Milk
+T039,Bread|Eggs|Jam
+T040,Milk|Bread|Butter|Cheese
+T041,Eggs|Cheese|Yogurt|Milk
+T042,Bread|Butter|Jam
+T043,Milk|Eggs|Bread
+T044,Cheese|Yogurt|Butter
+T045,Bread|Milk|Jam|Eggs
+T046,Butter|Bread|Cheese
+T047,Milk|Yogurt|Eggs|Bread
+T048,Jam|Cheese|Milk
+T049,Bread|Eggs|Butter|Milk
+T050,Yogurt|Milk|Bread|Cheese
+T051,Bread|Milk|Eggs
+T052,Butter|Jam|Bread
+T053,Milk|Eggs|Cheese
+T054,Bread|Milk|Butter
+T055,Eggs|Cheese|Yogurt
+T056,Bread|Milk|Eggs|Cheese
+T057,Butter|Jam|Bread
+T058,Milk|Yogurt|Cheese
+T059,Bread|Eggs|Butter
+T060,Milk|Bread|Jam
+T061,Eggs|Milk|Bread
+T062,Cheese|Yogurt|Milk
+T063,Bread|Jam|Butter|Milk
+T064,Eggs|Bread|Cheese
+T065,Milk|Butter|Yogurt
+T066,Bread|Milk|Eggs|Butter
+T067,Cheese|Eggs|Yogurt
+T068,Bread|Butter|Milk
+T069,Jam|Bread|Eggs
+T070,Milk|Cheese|Butter
+T071,Bread|Milk|Yogurt
+T072,Eggs|Butter|Jam
+T073,Bread|Cheese|Milk
+T074,Milk|Eggs|Butter|Bread
+T075,Yogurt|Cheese|Jam
+T076,Bread|Milk|Eggs
+T077,Butter|Bread|Jam|Milk
+T078,Eggs|Cheese|Bread
+T079,Milk|Yogurt|Butter
+T080,Bread|Jam|Eggs|Milk
+T081,Cheese|Milk|Bread
+T082,Eggs|Butter|Milk
+T083,Bread|Milk|Jam
+T084,Cheese|Eggs|Bread|Butter
+T085,Milk|Yogurt|Bread
+T086,Jam|Butter|Eggs
+T087,Bread|Milk|Cheese
+T088,Butter|Yogurt|Milk
+T089,Bread|Eggs|Jam
+T090,Milk|Bread|Butter|Cheese
+T091,Eggs|Cheese|Yogurt|Milk
+T092,Bread|Butter|Jam
+T093,Milk|Eggs|Bread
+T094,Cheese|Yogurt|Butter
+T095,Bread|Milk|Jam|Eggs
+T096,Butter|Bread|Cheese
+T097,Milk|Yogurt|Eggs|Bread
+T098,Jam|Cheese|Milk
+T099,Bread|Eggs|Butter|Milk
+T100,Yogurt|Milk|Bread|Cheese`
+    },
+    {
+      id: 'housing',
+      name: 'Housing Prices Dataset',
+      description: 'Housing price dataset — 80 records for regression analysis.',
+      rows: 80, columns: 6, format: 'CSV',
+      suitable: ['Regression'],
+      csv: `area_sqft,bedrooms,bathrooms,age_years,location_score,price
+1200,2,1,15,6.5,185000
+1500,3,2,8,7.2,240000
+980,1,1,22,5.8,140000
+2100,4,3,5,8.1,380000
+1750,3,2,12,7.8,295000
+1350,2,2,18,6.9,210000
+2400,5,3,3,8.5,450000
+1600,3,2,10,7.4,268000
+1100,2,1,20,6.2,172000
+1900,4,3,7,8.0,340000
+1450,3,2,14,7.1,225000
+2200,4,3,6,8.3,400000
+1300,2,1,17,6.7,198000
+1800,3,2,9,7.6,310000
+2500,5,4,2,9.0,520000
+1050,2,1,25,5.9,155000
+1650,3,2,11,7.5,278000
+2000,4,3,8,8.2,365000
+1250,2,2,16,6.8,202000
+1700,3,2,10,7.7,290000
+1400,2,2,15,7.0,218000
+2300,4,3,4,8.4,420000
+1550,3,2,13,7.3,248000
+1950,4,3,7,8.1,352000
+1100,2,1,22,6.0,168000
+1750,3,3,9,7.9,315000
+2100,4,3,6,8.3,385000
+1300,2,2,18,6.6,195000
+1600,3,2,12,7.5,265000
+2400,5,4,3,8.8,480000
+1000,2,1,28,5.7,145000
+1850,3,3,8,7.8,325000
+2250,4,3,5,8.4,410000
+1200,2,1,20,6.3,182000
+1700,3,2,11,7.6,285000
+1950,4,3,7,8.0,355000
+1450,3,2,14,7.2,228000
+2100,4,3,5,8.2,390000
+1350,2,2,17,6.9,212000
+1800,3,2,9,7.7,312000
+2500,5,4,2,9.1,530000
+1100,2,1,24,6.1,165000
+1600,3,2,12,7.4,270000
+2000,4,3,7,8.1,368000
+1250,2,2,16,6.7,200000
+1700,3,2,10,7.8,292000
+1400,2,2,15,7.0,220000
+2300,4,3,4,8.5,425000
+1500,3,2,13,7.3,245000
+1950,4,3,6,8.1,350000
+1150,2,1,21,6.2,175000
+1750,3,3,9,7.9,318000
+2150,4,3,5,8.3,395000
+1300,2,2,18,6.6,198000
+1650,3,2,11,7.5,268000
+2450,5,4,2,8.9,495000
+1050,2,1,26,5.8,150000
+1850,3,3,8,7.8,322000
+2200,4,3,5,8.4,408000
+1200,2,1,20,6.3,185000
+1700,3,2,10,7.6,288000
+1950,4,3,7,8.0,358000
+1450,3,2,14,7.2,230000
+2100,4,3,5,8.2,392000
+1350,2,2,16,6.9,215000
+1800,3,2,9,7.7,315000
+2500,5,4,1,9.2,540000
+1100,2,1,23,6.1,168000
+1600,3,2,11,7.4,272000
+2050,4,3,7,8.1,372000
+1280,2,2,17,6.8,205000
+1700,3,2,10,7.8,295000
+1400,2,2,14,7.1,222000
+2300,4,3,3,8.5,428000
+1550,3,2,12,7.3,250000
+1950,4,3,6,8.1,352000
+1150,2,1,21,6.3,178000
+1750,3,3,8,7.9,320000`
+    }
+  ],
+
+  get(id) { return this.datasets.find(d => d.id === id); },
+
+  load(id) {
+    const ds = this.get(id);
+    if (!ds) throw new Error(`Sample dataset "${id}" not found.`);
+    return DatasetLoader.fromCSVString(ds.csv);
+  },
+
+  getList() {
+    return this.datasets.map(({ id, name, description, rows, columns, suitable }) =>
+      ({ id, name, description, rows, columns, suitable }));
+  }
+};
